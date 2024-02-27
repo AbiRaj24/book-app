@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./book.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>IntelBook</h1>
+    </nav>
+    <div class="main">
+       
+        <div class="container">
+
+            <h2>book name</h2>
+            <h3>author name</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis soluta quas nam exercitationem sit.
+                Cum rem dignissimos
+                tempora dolore exercitationem dicta odio enim doloremque reiciendis error quis nam, animi id?</p>
+            <button id="add-button" onclick="deletecontent(event)">DELETE</button>
+        </div>
+       
+    </div>
+    <div class="overlay">
+        <div class="popup">
+            <h2>Add book</h2>
+            <form action="" id="form">
+                <input type="text" placeholder="Book Title" id="book-Title">
+                <input type="text" placeholder="Book Authour" id="Book-authour">
+                <textarea id="text-area" placeholder="book Description"></textarea>
+                <button id="add-btn">ADD</button>
+                <button id="cancel-btn" onclick="cancelpopup()">CANCEL</button>
+            </form>
+        </div>
+    </div>
+    <button id="show" onclick="displayPopup()">+</button>
+    <script src="./book.js"></script>
+</body>
+
+</html>
